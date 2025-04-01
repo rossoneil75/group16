@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThrowbackTo.com - 2000s</title>
+    <link rel="stylesheet" href="2000.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Sans+MS&family=Tahoma&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Return to Homepage Button -->
+    <header>
+        <a href="homepage.html" class="home-btn">← Home</a>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Page Title -->
+        <section class="title-section">
+            <h1>Welcome to the 2000s</h1>
+            <p class="designer-credit">This webpage was created by Ross O'Neil</p>
+        </section>
+
+        <!-- Jump to Section Buttons -->
+        <nav class="quick-nav">
+            <button onclick="scrollToSection('history')">History</button>
+            <button onclick="scrollToSection('politics')">Politics</button>
+            <button onclick="scrollToSection('music')">Music</button>
+            <button onclick="scrollToSection('fashion')">Fashion</button>
+            <button onclick="scrollToSection('food')">Food</button>
+            <button onclick="scrollToSection('sports')">Sports</button>
+            <button onclick="scrollToSection('technology')">Technology</button>
+        </nav>
+
+        <!-- History Section -->
+        <section id="history" class="content-section">
+            <h2>History</h2>
+            <div class="content-grid">
+                <div class="text-content">
+                    <p>The 2000s were marked by significant global events including the September 11 attacks in 2001, the subsequent War on Terror, and the global financial crisis of 2008. It was also a decade of technological advancement with the rise of social media platforms like Facebook and YouTube.</p>
+                </div>
+                <div class="media-content">
+                    <img src="images/2000s/wtc.jpg" alt="World Trade Center" class="section-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Politics Section -->
+        <section id="politics" class="content-section">
+            <h2 class="right-align">Politics</h2>
+            <div class="content-grid">
+                <div class="text-content">
+                    <p>The 2000s began with the controversial U.S. presidential election of 2000 between George W. Bush and Al Gore. The decade saw the Iraq War, the election of Barack Obama in 2008 as the first African-American president, and growing concerns about climate change.</p>
+                </div>
+                <div class="media-content">
+                    <img src="images/2000s/politics.jpg" alt="2000s Politics" class="section-image">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Music Section -->
+        <section id="music" class="content-section">
+            <h2>Music</h2>
+            <div class="content-grid">
+                <div class="text-content">
+                    <p>The 2000s saw the rise of pop icons like Britney Spears, Beyoncé, and Justin Timberlake. Rock bands like Linkin Park and The White Stripes dominated the charts, while hip-hop artists like Eminem and 50 Cent brought rap to mainstream audiences.</p>
+                    <!-- Spotify Embed -->
+                    <div class="spotify-embed">
+                        <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4o1oenSJRJd" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+                <div class="media-content">
+                    <img src="images/2000s/music.jpg" alt="2000s Music" class="section-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Fashion Section -->
+        <section id="fashion" class="content-section">
+            <h2 class="right-align">Fashion</h2>
+            <div class="content-grid">
+                <div class="text-content">
+                    <p>2000s fashion was all about low-rise jeans, trucker hats, velour tracksuits, and bedazzled everything. Brands like Von Dutch, Ed Hardy, and Juicy Couture dominated the scene. The "McBling" aesthetic featured lots of pink, rhinestones, and logo mania.</p>
+                </div>
+                <div class="media-content">
+                    <img src="images/2000s/fashion.jpg" alt="2000s Fashion" class="section-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Food Section -->
+        <section id="food" class="content-section">
+            <h2>Food</h2>
+            <div class="content-grid">
+                <div class="text-content">
+                    <p>The 2000s were all about convenience foods and new snack obsessions. Popular items included Lunchables, Bagel Bites, and the rise of energy drinks like Red Bull. Fast food chains introduced iconic menu items like the McGriddle and the KFC Famous Bowl. Reality food shows also boomed, with "Hell’s Kitchen" and "Iron Chef" drawing huge audiences.</p>
+                </div>
+                <div class="media-content">
+                    <img src="images/2000s/food.jpg" alt="2000s Food" class="section-image">
+                </div>
+        </div>
+        </section>
+
+        <!-- Sports Section -->
+        <section id="sports" class="content-section">
+            <h2 class="right-align">Sports</h2>
+            <div class="content-grid">
+                <div class="text-content">
+                    <p>In the world of sports, the 2000s were packed with memorable moments. Michael Phelps made Olympic history, while athletes like Roger Federer and Serena Williams dominated tennis. The NFL saw the rise of Tom Brady and the Patriots dynasty. In football (soccer), the 2006 World Cup in Germany was a global highlight, remembered for Zidane's infamous headbutt.</p>
+                </div>
+                <div class="media-content">
+                    <img src="images/2000s/sports.jpg" alt="2000s Sports" class="section-image">
+                </div>
+        </div>
+        </section>
+
+
+        <!-- Technology Section -->
+        <section id="technology" class="content-section">
+            <h2>Technology</h2>
+            <div class="content-grid">
+                <div class="text-content">
+                    <p>The 2000s saw the rise of the iPod (2001), Facebook (2004), YouTube (2005), and the iPhone (2007). Windows XP became the dominant operating system, and flip phones like the Motorola Razr were status symbols before smartphones took over.</p>
+                </div>
+                <div class="media-content">
+                    <img src="images/2000s/tech.jpg" alt="2000s Technology" class="section-image">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sticky Quiz Button -->
+    <div class="sticky-quiz-btn" onclick="startQuiz()">
+        Test Your Knowledge
+    </div>
+
+    <!-- Quiz Popup Container -->
+    <div id="quiz-container" class="quiz-popup">
+        <div class="quiz-content">
+            <span class="close-btn" onclick="closeQuiz()">×</span>
+            <div id="quiz"></div>
+        </div>
+    </div>
+
+    <script src="2000.js"></script>
+</body>
+</html>
