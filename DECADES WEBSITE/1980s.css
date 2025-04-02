@@ -24,7 +24,6 @@
     text-shadow: 2px 2px 5px rgba(0, 0, 0,0.5);
     letter-spacing: 5px;
     border-bottom: 1px solid black;
-    background: --!linear-gradient!(40deg, #FF007F, #0000FF;);
     position: relative;
 }
 
@@ -63,13 +62,11 @@
 
 
 .navbar{
-    border-bottom: --!1px solid black--!;
-    background: --!linear-gradient!(40deg, #FF007F, #0000FF);
     padding-top: 30px;
 }
 
 .navbar a{
-    font-family: "Lazer84";
+    font-family: "Lazer84", sans-serif;
     text-decoration: none;
     padding: 10px 15px;
     font-size: 19px;
@@ -432,6 +429,8 @@ video{
     border: 5px solid #333;
     height: 350px;
     box-sizing: border-box;
+    padding-top: 120px;
+    font-weight: bolder;
 }
 
 .swiper-slide div{
@@ -447,7 +446,7 @@ video{
     font-size: 10px;
     color: white;
     z-index: 10;
-    display: none;
+    display: none !important;
 }
 
 .swiper-button-next{
