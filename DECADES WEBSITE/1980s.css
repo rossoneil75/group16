@@ -68,7 +68,7 @@
 .navbar a{
     font-family: "Lazer84", sans-serif;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 13px 15px;
     font-size: 19px;
     transition: 0.3s;
     padding-left: 40px;
@@ -107,7 +107,7 @@ video{
 
 .rectangle{
     width: 900px;
-    height: 400px;
+    height: 320px;
     padding: 20px;
     background-color: white;
     color: #FF007F;
@@ -121,6 +121,11 @@ video{
 
 .rectangle h1{
     text-transform: uppercase;
+}
+
+.rectangle p{
+    font-weight: bold;
+    font-size: 19px;
 }
 
 /* General Reset */
