@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Rale;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(
+            to right,#FF007F, #8f68ff, #487bff,#0000FF,#fc72ff);
+    animation: animate-gradient 2.5s linear infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background: white;
+    padding: 2rem;
+    border-radius: 5px;
+    margin: 1rem;
+    width: 500px;
+    box-shadow: rgba(0,0,0,0.35)0px,5px,15px;
+}
