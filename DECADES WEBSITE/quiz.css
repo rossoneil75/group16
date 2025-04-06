@@ -104,7 +104,40 @@ body{
     text-transform: capitalize;
 }
 
-.playground{
+.playground,
+.loader{
     display: none;
+}
+ .quizBody #quizOptions{
+     list-style-type: none;
+     padding-top: 10px;
+ }
+
+ .quizBody #quizOptions li{
+     padding: 10px;
+     margin: 10px 0;
+     cursor: pointer;
+     border: 1px solid grey;
+     border-radius: 5px;
+ }
+
+.quizBody #quizOptions li:hover{
+    border: 2px solid green;
+}
+
+.quizBody #quizOptions li.correct{
+    background: #e7f6d5;
+    color: green;
+    border-color: #689f38;
+}
+
+.quizBody #quizOptions li.Incorrect{
+    background: #ffdde0;
+    color: red;
+    border-color: black;
+}
+
+.disable{
+    pointer-events: none;
 }
 
