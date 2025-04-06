@@ -1,5 +1,6 @@
 const playerName = document.getElementById("playerName"),
     startScreen = document.querySelector(".startScreen"),
+    quizBody = document.querySelector(".quizBody"),
     playground = document.querySelector(".playground"),
     endScreen = document.querySelector(".endScreen"),
     questionCount = document.getElementById("questionCount"),
@@ -19,8 +20,12 @@ let arrayQuestion = [],
 
 function startQuiz(){
     if (playerName.value !== ""){
+        questionIndex = score = 0;
         startScreen.style.display = "none";
         playground.style.display = "block";
+        endScreen.style.display= "none";
+        nextButton.innerHTML= "NEXT";
+        quizBody.style.display="none";
         loader.style.display="block";
         loadQuestion();
 
@@ -65,6 +70,8 @@ function loadAnswers(questionData){
 
         quizOptions.append(option)
     });
+
+    quizBody.style.display = "block";
 
     loader.style.display="none";
     displayTimer();
@@ -143,3 +150,8 @@ const displayTimer =() =>{
         }
     }, 1500);
 };
+
+function Home() {
+    // Redirecting to the home page
+    window.location.href = "1980's Decade.html";
+}

@@ -57,7 +57,8 @@ body{
 }
 
 .btn .startQuiz,
-.btn .resetQuiz{
+.btn .resetQuiz,
+.btn .home{
     cursor: pointer;
     color: #fff;
     background: linear-gradient(
