@@ -1,28 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="icon" href="80sNew.png" type="image/x-icon">
-    <title>1980'S FUN QUIZ</title>
-
-  <link rel="stylesheet" href="quiz.css">
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width", initial-scale="1.0" />
+    <title> 1980'S FUN QUIZ</title>
+    <link rel="stylesheet" href="quiz.css" />
+    <script defer src="quiz.js"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 </head>
 <body>
-<div class="container">
-  <h2>TEST YOUR KNOWLEDGE</h2>
-  1. There 5 fun questions to answer to test your knowledge <br />
-  2. Each Question has a 10 seconds timer limit <br />
-  3. Try your luck and enjoy! <br />
-
-  <div class="btn">
-    <input type="text" id="playername" placeholder="Player Name" />
+<div class="container startScreen">
+    <h2>QUIZ GAME</h2>
+    <h3>1. You will be asked 10 Questions. <br /></h3>
+    <h3>2. You have 10 seconds for each question. <br /></h3>
+    <h3>3. Have Fun!! <br /></h3>
+<div class="btn">
+    <input type="text" id="playerName" placeholder="Player Name"/>
     <br />
-    <button class="startquiz">START QUIZ</button>
-  </div>
-
+    <button class="startQuiz" onclick="startQuiz()">START QUIZ</button>
 </div>
+</div>
+
+<div class="container playground">
+<div class="quizHeader">
+    <div><span id="questionCount">1</span> of 10 Questions</div>
+    <div>
+        <i class="fa-solid fa-stopwatch"></i>
+        <span id="questionTimer">10</span>
+    </div>
+</div>
+    <div class="quizBody">
+        <h3 id="question"></h3>
+        <ul id="quizOptions"></ul>
+    </div>
+
+    <div class="loader">
+        <i class="fa-solid fa-gear fa-spin"></i>
+    </div>
+
+    <div class="quizFooter">
+        <button id="nextButton">NEXT</button>
+    </div>
+</div>
+
+
 </body>
 </html>
