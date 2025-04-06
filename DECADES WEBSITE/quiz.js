@@ -3,21 +3,22 @@ const playerName = document.getElementById("playerName"),
     playground = document.querySelector(".playground"),
     endScreen = document.querySelector(".endScreen"),
     questionCount = document.getElementById("questionCount"),
-    questionTimer = document.getElementById("question"),
+    questionTimer = document.getElementById("questionTimer"),
     question = document.getElementById("question"),
     quizOptions = document.getElementById("quizOptions"),
     loader = document.querySelector(".loader"),
     finalScore = document.querySelector(".finalScore"),
-    resultPlayerName = document.getElementById("playerName");
+    nextButton = document.getElementById("nextButton"),
+    resultPlayerName = document.getElementById("resultPlayerName");
 
 let arrayQuestion = [],
     questionIndex = 0,
     score = 0,
-    count = 10,
+    count = 15,
     countdown;
 
 function startQuiz(){
-    if (playerName.value != ""){
+    if (playerName.value !== ""){
         startScreen.style.display = "none";
         playground.style.display = "block";
         loader.style.display="block";
@@ -42,6 +43,8 @@ function loadQuestion() {
 
 function displayQuestion(questionData){
     console.log(questionData);
+    count=15;
+    clearInterval(countdown);
     question.innerHTML = questionData.question;
     questionCount.innerHTML = questionIndex + 1;
     loadAnswers(questionData)
@@ -64,10 +67,11 @@ function loadAnswers(questionData){
     });
 
     loader.style.display="none";
+    displayTimer();
 }
 
 function checkAnswer(answerOptions, answers, correctAnswer){
-    console.log(answerOptions, answers, correctAnswer);
+    //console.log(answerOptions, answers, correctAnswer);
     let correctElement;
 
     answers.forEach((answer)=>{
@@ -84,16 +88,19 @@ function checkAnswer(answerOptions, answers, correctAnswer){
 
     if(htmlDecode(correctAnswer)=== htmlDecode(answerOptions.innerText)){
         answerOptions.classList.add("correct");
+        score++;
     }else{
          answerOptions.classList.add("Incorrect");
          correctElement.classList.add("correct");
     }
 
-    console.log(correctElement);
+    //console.log(correctElement);
+    clearInterval(countdown)
 }
 
 
 nextButton.addEventListener("click",() => {
+    questionTimer.innerHTML = "15";
     if(nextButton.innerText ==="NEXT") {
         questionIndex = questionIndex + 1;
         displayQuestion(arrayQuestion[questionIndex]);
@@ -106,9 +113,33 @@ nextButton.addEventListener("click",() => {
     }
 });
 
-function showAnswer() {}
+function showAnswer() {
+    playground.style.display="none";
+    endScreen.style.display="block";
+    finalScore.innerHTML = score;
+    resultPlayerName.innerHTML = playerName.value;
+    questionCount.innerHTML = 1;
+    clearInterval(countdown);
+    count = 15;
+}
 function  htmlDecode(html) {
     var txt = document.createElement("textarea")
     txt.innerHTML = html;
     return txt.value;
 }
+
+const displayTimer =() =>{
+    countdown = setInterval(() => {
+        count-- ;
+        questionTimer.innerHTML = count;
+
+        if(count== 0){
+            clearInterval(countdown);
+
+
+            quizOptions.childNodes.forEach((li) => {
+                li.classList.add("disable");
+            });
+        }
+    }, 1500);
+};

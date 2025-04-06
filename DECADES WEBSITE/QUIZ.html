@@ -15,7 +15,7 @@
 <div class="container startScreen">
     <h2>QUIZ GAME</h2>
     <h3>1. You will be asked 10 Questions. <br /></h3>
-    <h3>2. You have 10 seconds for each question. <br /></h3>
+    <h3>2. You have 15 seconds for each question. <br /></h3>
     <h3>3. Have Fun!! <br /></h3>
 <div class="btn">
     <input type="text" id="playerName" placeholder="Player Name"/>
@@ -29,7 +29,7 @@
     <div><span id="questionCount">1</span> of 10 Questions</div>
     <div>
         <i class="fa-solid fa-stopwatch"></i>
-        <span id="questionTimer">10</span>
+        <span id="questionTimer">15</span>
     </div>
 </div>
     <div class="quizBody">
@@ -46,6 +46,16 @@
     </div>
 </div>
 
+<div class="container endScreen">
+<h2>QUIZ DONE</h2>
 
+<h3>Hello! <span id="resultPlayerName"></span></h3>
+
+<h3>Well done, you scored: <span class="finalScore">0</span> out of 10</h3>
+
+<div class="btn">
+    <button class="resetQuiz" onclick="startQuiz()">RESET QUIZ</button>
+</div>
+</div>
 </body>
 </html>

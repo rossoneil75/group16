@@ -26,7 +26,8 @@ body{
 
 }
 
-.container h2{
+.container h2,
+.endScreen h2{
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -55,7 +56,8 @@ body{
     text-transform: capitalize;
 }
 
-.btn .startQuiz{
+.btn .startQuiz,
+.btn .resetQuiz{
     cursor: pointer;
     color: #fff;
     background: linear-gradient(
@@ -105,6 +107,7 @@ body{
 }
 
 .playground,
+.endScreen,
 .loader{
     display: none;
 }
@@ -141,3 +144,9 @@ body{
     pointer-events: none;
 }
 
+.endScreen h3{
+    text-space: 5px;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    text-align: center;
+}
