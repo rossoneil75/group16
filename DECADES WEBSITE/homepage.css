@@ -26,7 +26,7 @@ video{
     padding: 0px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto; /* Adjust rows */
+    grid-template-rows: auto auto auto auto;
     gap: 20px;
     width: 80%;
     max-width: 960px;
@@ -46,13 +46,13 @@ video{
 
 .button-row {
     display: flex;
-    justify-content: space-around; /* Adjust as needed */
+    justify-content: space-around;
 }
 
 .button-row > div {
     display: flex;
-    flex-direction: column; /* Stack button and name vertically within each pair */
-    align-items: center; /* Center button and name horizontally within each pair */
+    flex-direction: column;
+    align-items: center;
 }
 
 .button {
@@ -60,7 +60,7 @@ video{
     border: 1px solid #ccc;
     background-color: red;
     cursor: pointer;
-    margin-bottom: 5px; /* Add space between button and name */
+    margin-bottom: 5px;
     margin-top: 50px;
 }
 
@@ -76,21 +76,30 @@ video{
     padding: 15px;
     text-align: center;
     min-height: 100px;
+    font-size: 40px;
 }
 
 .text {
-    color: #333;
+    color: white;
+    font-weight: bolder;
 }
 
-/* Responsive adjustments for smaller screens */
+.footer{
+    font-family: 'varsity';
+    font-size: 60px;
+    text-align: center;
+    color: white;
+}
+
+
 @media (max-width: 600px) {
     .button-row {
-        flex-direction: column; /* Stack the button-name pairs vertically */
+        flex-direction: column;
         align-items: center;
-        gap: 20px; /* Add spacing between the pairs */
+        gap: 20px;
     }
 
     .button-row > div {
-        width: 80%; /* Make the pairs take up more width */
+        width: 80%;
     }
 }

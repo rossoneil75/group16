@@ -1,19 +1,18 @@
-// Get all the button elements
+// Select all buttons
 const buttons = document.querySelectorAll('.button');
-const textArea = document.querySelector('.text');
-const nameElements = document.querySelectorAll('.name');
 
-// Add event listeners to the buttons
+// Define the file names corresponding to each button
+const files = [
+    "1970s.html",
+    "1980's Decade.html",
+    "1990s Decade.html",
+    "2000s Decade.html"
+];
+
+// Add click event listener to each button
 buttons.forEach((button, index) => {
     button.addEventListener('click', () => {
-        // Example: Update the text area when a button is clicked
-        textArea.textContent = `Button ${index + 1} Clicked!`;
-
-        // Example: Update the corresponding name when a button is clicked
-        if (nameElements[index]) {
-            nameElements[index].textContent = `Clicked Name ${index + 1}`;
-        }
+        // Redirect to the corresponding HTML file
+        window.location.href = files[index];
     });
 });
-
-// You can add more JavaScript here to handle other interactions
