@@ -155,3 +155,17 @@ function Home() {
     // Redirecting to the home page
     window.location.href = "1980's Decade.html";
 }
+
+function resetQuiz() {
+    questionIndex = 0;
+    score = 0;
+    count = 15;
+    nextButton.innerText = "NEXT";
+    questionTimer.innerHTML = "15";
+    questionCount.innerHTML = "1";
+    startScreen.style.display = "block";
+    endScreen.style.display = "none";
+    playground.style.display = "none";
+    playerName.value = "";
+}
+
