@@ -44,3 +44,22 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+const music = document.getElementById('backgroundMusic');
+const titlebar = document.querySelector('.titlebar');
+const notification = document.querySelector('.notification');
+
+titlebar.addEventListener('click', () => {
+    if (music.paused) {
+        music.play().catch(error => console.error('Playback failed:', error));
+    } else {
+        music.pause();
+    }
+
+    if (notification) {
+        notification.style.opacity = "0";
+        setTimeout(() => {
+            notification.remove();
+        }, 300);
+    }
+});

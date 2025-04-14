@@ -39,6 +39,20 @@
     background-size: contain;
 }
 
+.notification {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FF007F;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 6px;
+    opacity: 1px;
+    transition: opacity 0.3s ease-out;
+}
+
 .titlebar h1 {
     font-family: "varsity", sans-serif;
     font-size: 40px;
