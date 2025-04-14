@@ -18,7 +18,7 @@ closeModalBtns.forEach(button => {
     });
 });
 
-// Close modal when clicking outside content
+
 window.addEventListener('click', (e) => {
     modals.forEach(modal => {
         if (e.target === modal) {
@@ -27,7 +27,7 @@ window.addEventListener('click', (e) => {
     });
 });
 
-// Initialize Swiper.js for all modals
+
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll('.swiper').forEach(swiperEl => {
         new Swiper(swiperEl, {
@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+
 
             pagination: {
                 el: '.swiper-pagination',

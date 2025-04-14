@@ -443,12 +443,12 @@ video{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
+    font-size: 15px;
     background: #ffcc00;
     border: 5px solid #333;
     height: 350px;
     box-sizing: border-box;
-    padding-top: 110px;
+    padding-top: 90px;
     font-weight: bolder;
 }
 
