@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="80sNew.png" type="image/x-icon">
+  <title>Neon Gallery</title>
+  <link rel="stylesheet" href="gallery.css" />
+  <button class="home" onclick="Home()">HOME</button>
+</head>
+<body>
+<h1 class="neon-title">Neon Pop Gallery</h1>
+
+<div class="gallery">
+  <div class="gallery-item" onclick="openGallery(0)">
+    <p>HISTORY</p>
+  </div>
+  <div class="gallery-item" onclick="openGallery(1)">
+    <p>MUSIC</p>
+  </div>
+  <div class="gallery-item" onclick="openGallery(2)">
+    <p>FASHION</p>
+  </div>
+  <div class="gallery-item" onclick="openGallery(3)">
+    <p>POLITICS</p>
+  </div>
+  <div class="gallery-item" onclick="openGallery(4)">
+    <p>TECH</p>
+  </div>
+  <div class="gallery-item" onclick="openGallery(5)">
+    <p>FOOD</p>
+  </div>
+  <div class="gallery-item" onclick="openGallery(6)">
+    <p>SPORTS</p>
+  </div>
+  <div class="gallery-item" onclick="openGallery(7)">
+    <p>POP CULTURE</p>
+  </div>
+
+</div>
+
+<div class="popup" id="popup">
+  <span class="close-btn" onclick="closeGallery()">×</span>
+  <div class="popup-content">
+    <img id="popup-img" src="" alt="Gallery Image"/>
+    <div id="popup-caption" class="popup-caption"></div>
+    <div id="photo-caption" class="popup-photo-caption"></div>
+    <button onclick="prevImg()">◀</button>
+    <button onclick="nextImg()">▶</button>
+  </div>
+</div>
+
+<script src="gallery.js"></script>
+<footer>
+  <h1 class="footer">MADE BY BEST ABALAKA</h1>
+</footer>
+</body>
+</html>

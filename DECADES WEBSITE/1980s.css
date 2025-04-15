@@ -417,10 +417,11 @@ video{
 .modal-content {
     background: white;
     padding: 30px;
-    width: 120%;
-    max-width: 500px;
+    width: 130%;
+    max-width: 600px;
     position: relative;
     border-radius: 8px;
+
 }
 
 .close {
@@ -439,17 +440,19 @@ video{
     position: relative;
 }
 
+
 .swiper-slide {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 15px;
+    font-size: 18px;
     background: #ffcc00;
-    border: 5px solid #333;
+    border: 6px solid #333;
     height: 350px;
     box-sizing: border-box;
-    padding-top: 90px;
+    padding-top: 40px;
     font-weight: bolder;
+    width: fit-content;
 }
 
 .swiper-slide div{
@@ -475,6 +478,7 @@ video{
 .swiper-button-prev{
     left: -10px;
 }
+
 
 
 .footer{
