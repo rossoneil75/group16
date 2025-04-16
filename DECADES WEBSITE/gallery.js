@@ -13,7 +13,7 @@ const galleries = [
         title: "MUSIC",
         images: [
             {src:"mtv1981.jpg", caption:"MTV LAUNCH (1981)"},
-            {src:"michealjackson.jpg", caption:"MICHEAL JACKSON THRILLER ALBUM COVER"},
+            {src:"michealjackson.jpg", caption:"MICHEAL JACKSON'S THRILLER ALBUM COVER"},
             {src:"liveaidconcert.jpg", caption:"CROWD AT THE LIVE AID CONCERT 1985"},
             {src:"madonna.jpg", caption:"MADONNA IN THE EARLY 80s"},
             {src:"hiphopstars.jpg", caption:"HIPHOP STARS IN 1980S"}
@@ -21,11 +21,21 @@ const galleries = [
     },
     {
         title: "FASHION",
-        images: ["car1.jpg", "car2.jpg", "car3.jpg"]
+        images: [
+            {src:"powerdressing.jpg", caption:"POWER DRESSING STYLE IN THE 80s"},
+            {src:"legwarmers.jpg", caption:"LEGWARMERS USED IN THE 80s"},
+            {src:"acidwashjeans.jpg", caption:"GROUP OF GUYS IN ACIDWASH JEANS"},
+            {src:"neonfashion.jpg", caption:"POPULAR NEON FASHION IN THE 80s"},
+        ]
     },
     {
         title: "POLITICS",
-        images: ["car1.jpg", "car2.jpg", "car3.jpg"]
+        images: [
+            {src:"ronald.jpg", caption:"PRESIDENT RONALD REAGAN DURING HIS PRESIDENCY IN 1981"},
+            {src:"magaret.jpg", caption:"MAGARET THATCHER IN LATE 80s"},
+            {src:"berlinwall.jpg", caption:"FALLEN BERLIN WALL"},
+            {src:"iranaffair.jpg", caption:"WORLD LEADERS DURING THE IRAN-CONTRA AFFAIR"},
+        ]
     },
     {
         title: "TECH",
@@ -79,6 +89,16 @@ function updatePopup() {
     document.getElementById("popup-caption").textContent = gallery.title;
     document.getElementById("photo-caption").textContent = imageObj.caption;
 }
+
+window.onload = function () {
+    const images = document.querySelectorAll("img");
+
+    images.forEach((img) => {
+        img.style.width = "400px";  // or whatever size you want
+        img.style.height = "auto";  // keeps the aspect ratio
+    });
+};
+
 
 
 function Home() {
