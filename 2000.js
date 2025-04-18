@@ -1,4 +1,4 @@
-// Scroll to section function
+// scrolls smoothly to the section with the given id
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -6,7 +6,7 @@ function scrollToSection(sectionId) {
     }
 }
 
-// Quiz Questions
+// list of quiz questions with options and answers
 const quizQuestions = [
     {
         question: "What major global event happened on September 11, 2001?",
@@ -29,50 +29,100 @@ const quizQuestions = [
         answer: "Facebook"
     },
     {
-        question: "What was the highest-grossing film of the 2000s?",
+        question: "What triggered the global financial crisis in the late 2000s?",
         options: [
-            "The Dark Knight",
-            "Avatar",
-            "Titanic",
-            "The Lord of the Rings: The Return of the King"
+            "Dot-com bubble burst",
+            "Housing market crash",
+            "Oil shortage",
+            "High interest rates"
         ],
-        answer: "Avatar"
+        answer: "Housing market crash"
     },
     {
-        question: "Which of these was a popular mobile phone in the 2000s?",
+        question: "Who was elected as the first African-American U.S. president in 2008?",
+        options: [
+            "George W. Bush",
+            "Al Gore",
+            "Barack Obama",
+            "Joe Biden"
+        ],
+        answer: "Barack Obama"
+    },
+    {
+        question: "Which of these artists rose to fame during the 2000s?",
+        options: [
+            "Justin Timberlake",
+            "Adele",
+            "Taylor Swift",
+            "Olivia Rodrigo"
+        ],
+        answer: "Justin Timberlake"
+    },
+    {
+        question: "Which clothing brand was iconic in 2000s fashion trends?",
+        options: [
+            "Supreme",
+            "Juicy Couture",
+            "Zara",
+            "H&M"
+        ],
+        answer: "Juicy Couture"
+    },
+    {
+        question: "Which of the following was a popular snack in the 2000s?",
+        options: [
+            "Avocado toast",
+            "Bagel Bites",
+            "Acai bowls",
+            "Plant-based burgers"
+        ],
+        answer: "Bagel Bites"
+    },
+    {
+        question: "Who was the famous swimmer that dominated the 2008 Olympics?",
+        options: [
+            "Usain Bolt",
+            "Michael Phelps",
+            "Ryan Lochte",
+            "Tom Daley"
+        ],
+        answer: "Michael Phelps"
+    },
+    {
+        question: "What phone was a 2000s style icon before smartphones took over?",
         options: [
             "iPhone 12",
             "Motorola Razr",
-            "Samsung Galaxy S20",
-            "Google Pixel 4"
+            "Blackberry Key2",
+            "Nokia Lumia"
         ],
         answer: "Motorola Razr"
     },
     {
-        question: "What was the name of the popular music video game series that started in the 2000s?",
+        question: "Which operating system became hugely popular in the 2000s?",
         options: [
-            "Just Dance",
-            "Dance Dance Revolution",
-            "Guitar Hero",
-            "Rock Band"
+            "Windows Vista",
+            "macOS Big Sur",
+            "Windows XP",
+            "Linux Mint"
         ],
-        answer: "Guitar Hero"
+        answer: "Windows XP"
     }
 ];
 
-// Quiz State Variables
+// variables to keep track of quiz progress
 let currentQuestion = 0;
 let score = 0;
 let quizActive = false;
 
-// DOM Elements
+// get elements from the page
 const quizContainer = document.getElementById('quiz');
 const quizPopup = document.getElementById('quiz-container');
 
-// Initialize sticky button behavior
+// start the sticky button animation
 initStickyButton();
 
-// Quiz Control Functions
+// starts the quiz and shows the first question
 function startQuiz() {
     currentQuestion = 0;
     score = 0;
@@ -81,11 +131,13 @@ function startQuiz() {
     displayQuestion();
 }
 
+// hides the quiz popup and ends the quiz
 function closeQuiz() {
     quizPopup.style.display = 'none';
     quizActive = false;
 }
 
+// shows the current question and options
 function displayQuestion() {
     if (currentQuestion < quizQuestions.length) {
         quizContainer.innerHTML = `
@@ -101,6 +153,7 @@ function displayQuestion() {
     }
 }
 
+// checks if the selected answer is correct
 function checkAnswer(selectedIndex) {
     if (!quizActive) return;
     
@@ -109,12 +162,12 @@ function checkAnswer(selectedIndex) {
         quizQuestions[currentQuestion].answer
     );
     
-    // Disable all buttons after selection
+    // disable all options after one is clicked
     buttons.forEach(button => {
         button.disabled = true;
     });
     
-    // Highlight selected answer
+    // show feedback (correct/incorrect)
     if (selectedIndex === correctIndex) {
         buttons[selectedIndex].classList.add('correct');
         score++;
@@ -123,13 +176,14 @@ function checkAnswer(selectedIndex) {
         buttons[correctIndex].classList.add('correct');
     }
     
-    // Move to next question after delay
+    // go to the next question after a short pause
     setTimeout(() => {
         currentQuestion++;
         displayQuestion();
     }, 1500);
 }
 
+// shows the final score and buttons to restart or close
 function endQuiz() {
     quizContainer.innerHTML = `
         <div class="quiz-result">
@@ -141,12 +195,12 @@ function endQuiz() {
     `;
 }
 
-// Sticky Button Animation
+// makes the quiz button animate when scrolling
 function initStickyButton() {
     const stickyBtn = document.querySelector('.sticky-quiz-btn');
     
     window.addEventListener('scroll', function() {
-        // Add subtle "bounce" effect on scroll
+        // small bounce effect when scrolling down
         if (window.scrollY > 100) {
             stickyBtn.style.transform = 'translateY(-5px)';
             setTimeout(() => {
@@ -154,19 +208,19 @@ function initStickyButton() {
             }, 200);
         }
         
-        // Pulse animation every 20 seconds to attract attention
+        // pulse effect every 20 seconds to get attention
         if (window.scrollY > 300 && !quizActive) {
             setTimeout(() => {
                 stickyBtn.style.animation = 'pulse 1.5s ease-in-out';
                 setTimeout(() => {
                     stickyBtn.style.animation = '';
                 }, 1500);
-            }, 20000); // 20 second delay
+            }, 20000); // wait 20 seconds before playing animation
         }
     });
 }
 
-// Add to global scope for HTML onclick attributes
+// allows the quiz functions to be called from html
 window.startQuiz = startQuiz;
 window.closeQuiz = closeQuiz;
 window.checkAnswer = checkAnswer;
