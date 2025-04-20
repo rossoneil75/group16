@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin: 20px 0;
+    position: relative;
+}
+
+.navbar button {
+    position: relative;
+    margin: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #c75723;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.navbar button:hover {
+    background-color: #edba71;
+}
+
+.navbar button:active {
+    background-color: #997748;
+}
+
+.navbar button .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.navbar button:hover .dropdown {
+    display: block;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: gray;
+}
+
+h3 {
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #555;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.image-container img {
+    width: 210mm;
+    height: 297mm;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.image-container .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.page-button {
+    padding: 15px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #c75723;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.page-button:hover {
+    background-color: #edba71;
+}
+
+.page-button:active {
+    background-color: #997748;
+}
+
+.left-button {
+    left: 20px;
+}
+
+.right-button {
+    right: 20px;
+}
+
+.page-section {
+    margin: 50px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.page-section img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.page-section p {
+    font-size: 18px;
+    color: #333;
+    margin: 0 20px;
+}
+
+/* Flair container styles */
+.flair {
+    position: fixed;
+    z-index: 1000; /* Ensure flairs are above all other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flair img {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Top-left flair */
+.flair-top-left {
+    top: 0; /* Align to the top of the page */
+    left: 0; /* Align to the left of the page */
+    transform: translate(0%, 0%); /* Offset slightly inward */
+}
+
+/* Bottom-right flair */
+.flair-bottom-right {
+    bottom: 0; /* Align to the bottom of the page */
+    right: 0; /* Align to the right of the page */
+    transform: translate(0%, 0%); /* Offset slightly inward */
+}
