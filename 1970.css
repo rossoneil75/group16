@@ -1,17 +1,20 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
+    background-color: rgb(255, 248, 239);
 }
 
+/* Navbar Styles */
 .navbar {
     margin: 20px 0;
     position: relative;
 }
 
 .navbar button {
-    position: relative;
+    position: relative; /* Ensure the dropdown is positioned relative to the button */
     margin: 10px;
     padding: 10px 15px;
     font-size: 16px;
@@ -20,22 +23,25 @@ body {
     border-radius: 10px;
     background-color: #c75723;
     color: white;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for smooth scaling */
 }
 
 .navbar button:hover {
     background-color: #edba71;
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
 }
 
 .navbar button:active {
     background-color: #997748;
 }
 
+/* Dropdown Styles */
 .navbar button .dropdown {
-    display: none;
+    display: none; /* Initially hide the dropdown */
     position: absolute;
-    top: 100%;
-    left: 0;
+    top: 100%; /* Position the dropdown below the button */
+    left: 50%; /* Center the dropdown text relative to the button */
+    transform: translateX(-50%); /* Adjust for centering */
     background-color: #f9f9f9;
     color: black;
     padding: 10px;
@@ -43,14 +49,20 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1;
     white-space: nowrap;
+    font-size: 14px;
 }
 
+/* Show the dropdown on hover */
 .navbar button:hover .dropdown {
     display: block;
 }
 
+/* Header Styles */
 h1 {
     margin-bottom: 10px;
+    font-family: 'Comic Sans'; /* Apply Blippo, fantasy font */
+    font-size: 42px; /* Set font size */
+    color: #e18256; /* Set font color */
 }
 
 h2 {
@@ -63,6 +75,13 @@ h3 {
     margin-bottom: 30px;
     font-size: 16px;
     color: #555;
+}
+
+h4 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-family: '', fantasy;
+    color: #4f4e4e;  
 }
 
 .image-container {
@@ -107,14 +126,7 @@ h3 {
     background-color: #997748;
 }
 
-.left-button {
-    left: 20px;
-}
-
-.right-button {
-    right: 20px;
-}
-
+/* Page Section Styles */
 .page-section {
     margin: 50px auto;
     max-width: 800px;
@@ -135,7 +147,24 @@ h3 {
     margin: 0 20px;
 }
 
-/* Flair container styles */
+/* Solid line above each section */
+hr {
+    border: none;
+    border-top: 2px solid #ccc;
+    width: 50%; /* Adjust width to match the text width */
+    margin: 40px auto; /* Center the line horizontally */
+}
+
+/* Alternate alignment for sections */
+.page-section.left-align {
+    text-align: left;
+}
+
+.page-section.right-align {
+    text-align: right;
+}
+
+/* Flair Styles */
 .flair {
     position: fixed;
     z-index: 1000; /* Ensure flairs are above all other content */
@@ -151,14 +180,31 @@ h3 {
 
 /* Top-left flair */
 .flair-top-left {
-    top: 0; /* Align to the top of the page */
-    left: 0; /* Align to the left of the page */
-    transform: translate(0%, 0%); /* Offset slightly inward */
+    top: 0;
+    left: 0;
 }
 
 /* Bottom-right flair */
 .flair-bottom-right {
-    bottom: 0; /* Align to the bottom of the page */
-    right: 0; /* Align to the right of the page */
-    transform: translate(0%, 0%); /* Offset slightly inward */
+    bottom: 0;
+    right: 0;
 }
+
+/* Style for section images */
+.section-image {
+    float: left; /* Push the image to the left */
+    margin-right: 20px; /* Add spacing between the image and text */
+    margin-top: 30px; /* Move the image down by a few pixels */
+    width: 250px !important; /* Force the width to 50px */
+    height: auto !important; /* Maintain aspect ratio */
+}
+
+.sections-container {
+    border: 5px solid #ccc; /* Thick border around all sections */
+    padding: 20px; /* Add spacing inside the border */
+    margin: 20px auto; /* Center the container and add spacing around it */
+    max-width: 900px; /* Limit the width of the container */
+    background-color: #fff; /* Optional: Add a background color */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
