@@ -147,14 +147,6 @@ h4 {
     margin: 0 20px;
 }
 
-/* Solid line above each section */
-hr {
-    border: none;
-    border-top: 2px solid #ccc;
-    width: 50%; /* Adjust width to match the text width */
-    margin: 40px auto; /* Center the line horizontally */
-}
-
 /* Alternate alignment for sections */
 .page-section.left-align {
     text-align: left;
@@ -200,11 +192,101 @@ hr {
 }
 
 .sections-container {
-    border: 5px solid #ccc; /* Thick border around all sections */
+    border: 5px solid #ccc; /* Keep the thick border */
     padding: 20px; /* Add spacing inside the border */
     margin: 20px auto; /* Center the container and add spacing around it */
     max-width: 900px; /* Limit the width of the container */
     background-color: #fff; /* Optional: Add a background color */
-    border-radius: 10px; /* Optional: Add rounded corners */
+    border-radius: 0; /* Remove rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.newspaper-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+    gap: 20px; /* Space between columns */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the layout */
+    background-color: #fff;
+    border: 5px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Newspaper Title Styles */
+.newspaper-title {
+    grid-column: span 3; /* Make the title span across all columns */
+    text-align: left;
+    margin-bottom: 5px; /* Reduce the bottom margin */
+    padding: 1px;
+    border-bottom: 3px solid #000000; /* Add a bold underline */
+}
+
+.newspaper-title h1 {
+    font-family: 'Times New Roman', serif; /* Classic newspaper font */
+    font-size: 80px; /* Large font size */
+    font-weight: bold;
+    color: #000; /* Black text */
+    text-transform: uppercase; /* Make the text uppercase */
+    letter-spacing: 2px; /* Add spacing between letters */
+}
+
+.article h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.article p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.article footer {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+    text-align: right;
+}
+
+/* Footer Section Styles */
+.newspaper-footer {
+    grid-column: span 3; /* Span across all columns */
+    margin: 5px 0; /* Reduce the top and bottom margin */
+    padding: 2px 0; /* Minimal padding */
+    border-bottom: 2px solid #ccc; /* Line separating the footer */
+    text-align: center;
+    font-size: 14px;
+    color: #000000;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-section {
+    flex: 1; /* Equal width for all sections */
+    text-align: center;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-right {
+    text-align: right;
 }
 
