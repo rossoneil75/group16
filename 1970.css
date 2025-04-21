@@ -1,0 +1,210 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 248, 239);
+}
+
+/* Navbar Styles */
+.navbar {
+    margin: 20px 0;
+    position: relative;
+}
+
+.navbar button {
+    position: relative; /* Ensure the dropdown is positioned relative to the button */
+    margin: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #c75723;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+.navbar button:hover {
+    background-color: #edba71;
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+.navbar button:active {
+    background-color: #997748;
+}
+
+/* Dropdown Styles */
+.navbar button .dropdown {
+    display: none; /* Initially hide the dropdown */
+    position: absolute;
+    top: 100%; /* Position the dropdown below the button */
+    left: 50%; /* Center the dropdown text relative to the button */
+    transform: translateX(-50%); /* Adjust for centering */
+    background-color: #f9f9f9;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+/* Show the dropdown on hover */
+.navbar button:hover .dropdown {
+    display: block;
+}
+
+/* Header Styles */
+h1 {
+    margin-bottom: 10px;
+    font-family: 'Comic Sans'; /* Apply Blippo, fantasy font */
+    font-size: 42px; /* Set font size */
+    color: #e18256; /* Set font color */
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: gray;
+}
+
+h3 {
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #555;
+}
+
+h4 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-family: '', fantasy;
+    color: #4f4e4e;  
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.image-container img {
+    width: 210mm;
+    height: 297mm;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.image-container .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.page-button {
+    padding: 15px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #c75723;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.page-button:hover {
+    background-color: #edba71;
+}
+
+.page-button:active {
+    background-color: #997748;
+}
+
+/* Page Section Styles */
+.page-section {
+    margin: 50px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.page-section img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.page-section p {
+    font-size: 18px;
+    color: #333;
+    margin: 0 20px;
+}
+
+/* Solid line above each section */
+hr {
+    border: none;
+    border-top: 2px solid #ccc;
+    width: 50%; /* Adjust width to match the text width */
+    margin: 40px auto; /* Center the line horizontally */
+}
+
+/* Alternate alignment for sections */
+.page-section.left-align {
+    text-align: left;
+}
+
+.page-section.right-align {
+    text-align: right;
+}
+
+/* Flair Styles */
+.flair {
+    position: fixed;
+    z-index: 1000; /* Ensure flairs are above all other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flair img {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Top-left flair */
+.flair-top-left {
+    top: 0;
+    left: 0;
+}
+
+/* Bottom-right flair */
+.flair-bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+/* Style for section images */
+.section-image {
+    float: left; /* Push the image to the left */
+    margin-right: 20px; /* Add spacing between the image and text */
+    margin-top: 30px; /* Move the image down by a few pixels */
+    width: 250px !important; /* Force the width to 50px */
+    height: auto !important; /* Maintain aspect ratio */
+}
+
+.sections-container {
+    border: 5px solid #ccc; /* Thick border around all sections */
+    padding: 20px; /* Add spacing inside the border */
+    margin: 20px auto; /* Center the container and add spacing around it */
+    max-width: 900px; /* Limit the width of the container */
+    background-color: #fff; /* Optional: Add a background color */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
