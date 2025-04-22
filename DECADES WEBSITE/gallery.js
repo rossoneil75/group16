@@ -1,3 +1,4 @@
+/*A little bit of help from YouTube videos, tutorials and various websites (w3schools and more)*/
 const galleries = [
     {
         title: "HISTORY",
@@ -94,8 +95,8 @@ window.onload = function () {
     const images = document.querySelectorAll("img");
 
     images.forEach((img) => {
-        img.style.width = "400px";  // or whatever size you want
-        img.style.height = "auto";  // keeps the aspect ratio
+        img.style.width = "400px";
+        img.style.height = "auto";
     });
 };
 
