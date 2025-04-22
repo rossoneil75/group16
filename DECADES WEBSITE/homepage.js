@@ -13,7 +13,7 @@ const files = [
 // Add click event listener to each button
 buttons.forEach((button, index) => {
     button.addEventListener('click', () => {
-        // Redirect to the corresponding HTML file
+        // Redirect to the correspoding HTML file
         window.location.href = files[index];
     });
 });
