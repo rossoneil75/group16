@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('../img/2010s_background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.title-section {
+  text-align: center;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.nav-buttons button,
+header button {
+  padding: 10px 20px;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0 20px 20px;
+}
+
+.box {
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px;
+  text-align: center;
+}
+
+.media-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.media,
+.text {
+  border: 2px solid rgb(34, 242, 228);
+  padding: 10px;
+}
+
+.title-section {
+  background-color: rgba(0, 0, 0, 0.8); /* dark transparent background */
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  color: #f0f0f0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.box,
+.media,
+.text {
+  background-color: rgba(0, 0, 0, 0.8); /* makes content boxes readable */
+  color: white;
+}
