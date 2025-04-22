@@ -3,10 +3,10 @@ const buttons = document.querySelectorAll('.button');
 
 // Define the file names corresponding to each button
 const files = [
-    "1970s.html",
+    "group16/1970_MichaelGibson.html",
     "1980's Decade.html",
-    "1990s Decade.html",
-    "2000s Decade.html"
+    "group16/2000.html",
+    "group16/2010s.html",
 ];
 
 // Add click event listener to each button
