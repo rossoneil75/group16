@@ -40,11 +40,20 @@ const galleries = [
     },
     {
         title: "TECH",
-        images: ["car1.jpg", "car2.jpg", "car3.jpg"]
+        images: [
+            {src:"ibmcomputer.jpg", caption:"FIRST IBM COMPUTER INVENTED"},
+            {src:"compactdisk.png", caption:" A COMPACT DISK"},
+            {src:"applemacintosh.jpg", caption:"APPLE MACINTOSH INVENTED IN 1984"},
+            {src:"sonywalkman.jpg", caption:"SONY WALKMAN"},
+        ]
     },
     {
         title: "FOOD",
-        images: ["car1.jpg", "car2.jpg", "car3.jpg"]
+        images: [
+            {src:"frenchonionsoup.jpg", caption:"FRENCH ONION SOUP"},
+            {src:"Leancuisine.jpg", caption:"LEAN CUISINE"},
+            {src:"doritos.jpg", caption:"COOL RANCH DORITOS"},
+        ]
     },
     {
         title: "SPORT",

@@ -14,6 +14,12 @@
     src: url('RusillaserifLight.ttf') format('truetype');
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
 .titlebar{
     text-align: center;
     padding: 0.5px;
