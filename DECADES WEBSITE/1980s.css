@@ -23,9 +23,7 @@ body {
 
 .titlebar{
     text-align: center;
-    padding: 0.5px;
-    padding-left: 1px;
-    padding-bottom: 9px;
+    padding: 1px 1px 9px 1px;
     font-size: 20px;
     font-weight: bold;
     font-family: Lazer84, sans-serif;
@@ -152,22 +150,22 @@ video{
     font-size: 19px;
 }
 
-/* General Reset */
+
 * {
     box-sizing: border-box;
 }
 
 
-/* Card Container - Grid Layout */
+
 .card-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
     justify-items: center;
 }
 
-/* Retro Card Styling */
+
 .retro-card1 {
     width: 250px;
     padding: 20px;
@@ -266,7 +264,7 @@ video{
 
 .retro-card1 h2 {
     color: #0000FF;
-    font-family: varsity;
+    font-family: varsity, sans-serif;
 }
 
 
@@ -287,7 +285,7 @@ video{
 
 .retro-card2 h2 {
     color: #FF007F;
-    font-family: varsity;
+    font-family: varsity, sans-serif;
 }
 
 .retro-card3 button {
@@ -307,7 +305,7 @@ video{
 
 .retro-card3 h2 {
     color: #0000FF;
-    font-family: varsity;
+    font-family: varsity, sans-serif;
 }
 
 .retro-card4 button {
@@ -327,7 +325,7 @@ video{
 
 .retro-card4 h2 {
     color: #FF007F;
-    font-family: varsity;
+    font-family: varsity, sans-serif;
 }
 
 .retro-card5 button {
@@ -347,7 +345,7 @@ video{
 
 .retro-card5 h2 {
     color: #0000FF;
-    font-family: varsity;
+    font-family: varsity, sans-serif;
 }
 
 .retro-card6 button {
@@ -367,7 +365,7 @@ video{
 
 .retro-card6 h2 {
     color: #FF007F;
-    font-family: varsity;
+    font-family: varsity, sans-serif;
 }
 
 .retro-card7 button {
@@ -386,7 +384,7 @@ video{
 
 .retro-card7 h2 {
     color: #0000FF;
-    font-family: varsity;
+    font-family: varsity, sans-serif;
 }
 
 .retro-card8 button {
@@ -405,10 +403,10 @@ video{
 
 .retro-card8 h2 {
     color: #FF007F;
-    font-family: varsity;
+    font-family: varsity, sans-serif;
 }
 
-/* Modal (Popup) */
+
 .modal {
     display: none;
     position: fixed;
@@ -492,7 +490,7 @@ video{
 
 
 .footer{
-    font-family: 'varsity';
+    font-family: 'varsity', sans-serif;
     font-size: 60px;
     text-align: center;
     background: linear-gradient(
