@@ -6,11 +6,19 @@
   <link rel="icon" href="80sNew.png" type="image/x-icon">
   <title>Neon Gallery</title>
   <link rel="stylesheet" href="gallery.css" />
-  <button class="home" onclick="Home()">HOME</button>
+
 </head>
 <body>
-<h1 class="neon-title">1980'S GALLERY</h1>
 
+<button class="home" onclick="Home()">HOME</button>
+<section id="video-section">
+  <video autoplay loop muted playsinline class="video">
+    <source src="80s Retro Futuristic Sci Fi Seamless Loop Retrowave Vj Videogame Landscape Neon - 4k.mp4"
+            type="video/mp4">
+  </video>
+</section>
+
+<h1 class="neon-title">1980'S GALLERY</h1>
 <div class="gallery">
   <div class="gallery-item" onclick="openGallery(0)">
     <p>HISTORY</p>
@@ -38,6 +46,7 @@
   </div>
 
 </div>
+
 
 <div class="popup" id="popup">
   <span class="close-btn" onclick="closeGallery()">×</span>

@@ -57,7 +57,12 @@ const galleries = [
     },
     {
         title: "SPORT",
-        images: ["car1.jpg", "car2.jpg", "car3.jpg"]
+        images: [
+            {src:"miracleonice.jpg", caption:"MIRACLE ON ICE COMPETITION"},
+            {src:"COEVSOVETTRIVALRY.jpg", caption:"COE AND OVETT"},
+            {src:"waynegretzky.jpg", caption:"WAYNE GRETZKY PLAYING ICE HOCKEY"},
+            {src:"steveredgrave.jpg", caption:"STEVE REDGRAVE WITH HIS GOLD MEDAL"},
+        ]
     },
     {
         title: "POP CULTURE",

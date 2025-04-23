@@ -2,7 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width", initial-scale="1.0" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
     <title> 1980'S FUN QUIZ</title>
     <link rel="stylesheet" href="quiz.css" />
     <link rel="icon" href="80sNew.png" type="image/x-icon">
@@ -13,13 +13,20 @@
     />
 </head>
 <body>
+<section id="video-section">
+    <video autoplay loop muted playsinline class="video">
+        <source src="80s Retro Futuristic Sci Fi Seamless Loop Retrowave Vj Videogame Landscape Neon - 4k.mp4"
+                type="video/mp4">
+    </video>
+</section>
+
 <div class="container startScreen">
-    <h2>QUIZ GAME</h2>
+    <h2> WELCOME TO THE 1980'S QUIZ GAME</h2>
     <h3>1. You will be asked 10 Questions. <br /></h3>
     <h3>2. You have 15 seconds for each question. <br /></h3>
     <h3>3. Have Fun!! <br /></h3>
 <div class="btn">
-    <input type="text" id="playerName" placeholder="Player Name"/>
+    <label for="playerName"></label><input type="text" id="playerName" placeholder="Player Name"/>
     <br />
     <button class="startQuiz" onclick="startQuiz()">START QUIZ</button>
     <button class="home" onclick="Home()">HOME</button>

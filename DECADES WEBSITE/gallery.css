@@ -31,7 +31,7 @@ body {
 }
 
 .gallery-item {
-    background-color: #111;
+    background-color: yellow;
     border: 2px solid #0000FF;
     padding: 30px 20px;
     cursor: pointer;
@@ -44,6 +44,7 @@ body {
 .gallery-item p{
     font-weight: bolder;
     text-transform: capitalize;
+    color: #FF007F;
 }
 
 .gallery-item:hover {
@@ -116,6 +117,8 @@ button:hover {
     background-color: #ff00ff;
     color: #000;
 }
+
+
 .footer {
     font-size: 3rem;
     color: #FF007F;
@@ -256,13 +259,12 @@ button:hover {
     padding: 20px 20px;
     color: #FF007F;
     border: none;
-    background: black;
+    background: none;
     text-shadow:
             0 0 5px #FF007F,
             0 0 10px #FF007F,
             0 0 20px #FF007F;
     overflow: hidden;
-    animation: flicker 2s infinite;
 }
 
 /* Glitch Effect */
@@ -281,8 +283,24 @@ button:hover {
     animation: glitchTop 2s infinite linear;
 }
 
+
 .home::after {
     color: #00ffff;
     animation: glitchBottom 2s infinite linear;
 }
 
+#video-section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+video{
+    width: 300%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
