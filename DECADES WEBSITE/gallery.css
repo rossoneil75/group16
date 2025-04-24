@@ -132,7 +132,6 @@ button:hover {
     overflow: hidden;
 }
 
-/* Glitch layers */
 .footer::before,
 .footer::after {
     content: "MADE BY BEST ABALAKA";
@@ -152,7 +151,7 @@ button:hover {
     animation: glitchBottom 2s infinite linear;
 }
 
-/* Animations */
+
 @keyframes flicker {
     0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
         opacity: 1;
@@ -267,7 +266,7 @@ button:hover {
     overflow: hidden;
 }
 
-/* Glitch Effect */
+
 .home::before,
 .home::after {
     position: absolute;

@@ -1,3 +1,4 @@
+/*Little bit of help from youtube videos, tutorials from lab sessions and various websites (w3schools and more)*/
 body {
     font-family: sans-serif;
     margin: 20px;
@@ -57,11 +58,24 @@ video{
 
 .button {
     padding: 50px 50px;
-    border: 1px solid #ccc;
-    background-color: red;
+    background-color: yellow;
+    border: 2px solid #0000FF;
     cursor: pointer;
-    margin-bottom: 5px;
-    margin-top: 50px;
+    text-align: center;
+    box-shadow: 0 0 10px #0000FF;
+    animation: neonBorder 1.5s infinite alternate;
+    transition: transform 0.3s;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+@keyframes neonBorder {
+    0% {
+        box-shadow: 0 0 5px #487bff, 0 0 10px #487bff;
+    }
+    100% {
+        box-shadow: 0 0 20px #FF007F, 0 0 30px #FF007F;
+    }
 }
 
 .name {

@@ -1,7 +1,5 @@
-// Select all buttons
 const buttons = document.querySelectorAll('.button');
 
-// Define the file names corresponding to each button
 const files = [
     "1970_MichealGibson.html",
     "1980's Decade.html",
@@ -10,7 +8,6 @@ const files = [
     "2010s.html"
 ];
 
-// Add click event listener to each button
 buttons.forEach((button, index) => {
     button.addEventListener('click', () => {
         // Redirect to the corresponding HTML file
