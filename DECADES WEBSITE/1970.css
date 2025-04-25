@@ -256,6 +256,36 @@ h4 {
     text-align: right;
 }
 
+
+.article.highlight {
+    background-color: #ffe88b;
+    border-radius: 15px; /* Rounded corners */
+    animation: pop-out 0.5s ease, fade-out-bg 1s ease 0.5s forwards; /* Pop-out and fade-out animations */
+}
+
+/* Pop-out animation */
+@keyframes pop-out {
+    0% {
+        transform: scale(1); /* Start at normal size */
+    }
+    50% {
+        transform: scale(1.05); /* Enlarge slightly */
+    }
+    100% {
+        transform: scale(1); /* Return to normal size */
+    }
+}
+
+/* Fade-out animation for background color */
+@keyframes fade-out-bg {
+    0% {
+        background-color: #ffe88b; /* Start with the highlight color */
+    }
+    100% {
+        background-color: transparent; /* Fade to transparent */
+    }
+}
+
 /* Footer Section Styles */
 .newspaper-footer {
     grid-column: span 3; /* Span across all columns */
