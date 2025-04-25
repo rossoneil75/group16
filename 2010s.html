@@ -21,13 +21,13 @@
 
   <nav class="nav-buttons">
     <button onclick="document.location='DECADES WEBSITE/homepage.html'">HOMEPAGE</button>
-    <button>HISTORY</button>
-    <button>MUSIC</button>
-    <button>POLITICS</button>
-    <button>FASHION</button>
-    <button>FOOD</button>
-    <button>TECHNOLOGY</button>
-    <button>SPORTS</button>
+    <button data-topic="history">HISTORY</button>
+    <button data-topic="music">MUSIC</button>
+    <button data-topic="politics">POLITICS</button>
+    <button data-topic="fashion">FASHION</button>
+    <button data-topic="food">FOOD</button>
+    <button data-topic="technology">TECHNOLOGY</button>
+    <button data-topic="sports">SPORTS</button>
     <button id="openQuizBtn">Take the Quiz</button>
   </nav>
   
@@ -50,21 +50,13 @@
   </div>
 </div>
   
+<main class="main-content">
+  <section class="box" id="placeholderMessage">
+    <div class="text">Please select a topic above to explore content from the 2010s!</div>
+  </section>
+</main>
+
   <script src="2010s.js"></script>
-
-  <main class="main-content">
-    <section class="box text-box">TEXT</section>
-    <section class="box media-text">
-      <div class="media">MEDIA</div>
-      <div class="text">TEXT</div>
-    </section>
-    <section class="box text-box">TEXT</section>
-    <section class="box media-text">
-      <div class="media">MEDIA</div>
-      <div class="text">TEXT</div>
-    </section>
-  </main>
-
   <script src="js/scripts.js"></script>
 </body>
 </html>
