@@ -35,14 +35,15 @@ header button {
   padding: 10px 20px;
   border-radius: 12px;
   transition-duration: 0.4s;
-  background-color: rgba(21, 178, 84, 0.498); 
-  color: rgb(255, 255, 255); 
+  background-color: rgba(21, 178, 84, 0.498);
+  color: rgb(255, 255, 255);
   border: 2px solid rgb(21, 178, 84);
   cursor: pointer;
 }
 
 .nav-buttons button:hover {
   background-color: rgba(21, 178, 84, 0.968);
+  animation: glow 2s infinite ease-in-out;
   color: white;
 }
 
@@ -67,14 +68,19 @@ header button {
 
 .media-text {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .media,
 .text {
-  border: 2px solid rgb(34, 242, 228);
+  border: 2px solid rgb(21, 178, 84, 0.968);
   padding: 10px;
+  flex: 1;
+  max-width: 50%;
 }
 
 .title-section {
@@ -99,6 +105,15 @@ header button {
 .text {
   background-color: rgb(16, 16, 16); /* makes content boxes readable */
   color: white;
+}
+
+#placeholderMessage .text {
+  display: inline-block;
+  max-width: 50%;
+  font-size: 1.2rem;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  animation: glow 2s infinite ease-in-out;
 }
 
 .popup {
@@ -132,11 +147,17 @@ header button {
   animation: fade 0.5s ease-in-out;
 }
 
-.fade {
-  animation: fade 0.5s ease-in-out;
+.fade,.fade-in {
+  animation: fade 0.3s ease-in-out;
 }
 
 @keyframes fade {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 8px #00ff99; }
+  50% { box-shadow: 0 0 16px #00ff99; }
+  100% { box-shadow: 0 0 8px #00ff99; }
 }
