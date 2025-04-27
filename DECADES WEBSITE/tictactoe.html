@@ -11,13 +11,19 @@
     <title>Tic-Tac-Toe</title>
 </head>
 <body>
+<section id="video-section">
+    <video autoplay loop muted playsinline class="video">
+        <source src="80s Retro Futuristic Sci Fi Seamless Loop Retrowave Vj Videogame Landscape Neon - 4k.mp4"
+                type="video/mp4">
+    </video>
+</section>
 <main class="background">
     <section class="title">
         <h1>TIC TAC TOE</h1>
     </section>
     <section class="display">
         Player <span class="display-player playerX">X</span>'s turn
-    </section>
+        <span id="game-mode-display"></span>  </section>
     <section class="container">
         <div class="tile"></div>
         <div class="tile"></div>
@@ -32,6 +38,7 @@
     <section class="display announcer hide"></section>
     <section class="controls">
         <button id="reset">RESET</button>
+        <button id="ai-mode">PLAY VS. AI</button>  <button id="two-player-mode" class="hide">TWO PLAYER</button>
         <button class="home" onclick="Home()">HOME</button>
     </section>
 </main>

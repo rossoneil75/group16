@@ -1,9 +1,8 @@
-// Get all modal buttons
+/*A Little bit of help from Youtube videos, tutorials and various websites (w3schools and more)*/
 const openModalBtns = document.querySelectorAll('.open-modal');
 const closeModalBtns = document.querySelectorAll('.close');
 const modals = document.querySelectorAll('.modal');
 
-// Open correct modal
 openModalBtns.forEach(button => {
     button.addEventListener('click', function () {
         const modalId = this.getAttribute('data-modal');
@@ -11,7 +10,7 @@ openModalBtns.forEach(button => {
     });
 });
 
-// Close modals
+
 closeModalBtns.forEach(button => {
     button.addEventListener('click', function () {
         this.closest('.modal').style.display = 'none';

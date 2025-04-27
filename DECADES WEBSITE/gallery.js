@@ -1,3 +1,4 @@
+/*A little bit of help from YouTube videos, tutorials and various websites (w3schools and more)*/
 const galleries = [
     {
         title: "HISTORY",
@@ -39,19 +40,38 @@ const galleries = [
     },
     {
         title: "TECH",
-        images: ["car1.jpg", "car2.jpg", "car3.jpg"]
+        images: [
+            {src:"ibmcomputer.jpg", caption:"FIRST IBM COMPUTER INVENTED"},
+            {src:"compactdisk.png", caption:" A COMPACT DISK"},
+            {src:"applemacintosh.jpg", caption:"APPLE MACINTOSH INVENTED IN 1984"},
+            {src:"sonywalkman.jpg", caption:"SONY WALKMAN"},
+        ]
     },
     {
         title: "FOOD",
-        images: ["car1.jpg", "car2.jpg", "car3.jpg"]
+        images: [
+            {src:"frenchonionsoup.jpg", caption:"FRENCH ONION SOUP"},
+            {src:"Leancuisine.jpg", caption:"LEAN CUISINE"},
+            {src:"doritos.jpg", caption:"COOL RANCH DORITOS"},
+        ]
     },
     {
         title: "SPORT",
-        images: ["car1.jpg", "car2.jpg", "car3.jpg"]
+        images: [
+            {src:"miracleonice.jpg", caption:"MIRACLE ON ICE COMPETITION"},
+            {src:"COEVSOVETTRIVALRY.jpg", caption:"COE AND OVETT"},
+            {src:"waynegretzky.jpg", caption:"WAYNE GRETZKY PLAYING ICE HOCKEY"},
+            {src:"steveredgrave.jpg", caption:"STEVE REDGRAVE WITH HIS GOLD MEDAL"},
+        ]
     },
     {
         title: "POP CULTURE",
-        images: ["car1.jpg", "car2.jpg", "car3.jpg"]
+        images: [
+            {src:"80tvshows.avif", caption:"POPULAR TV SHOWS IN THE 80s"},
+            {src:"foreigners.jpg", caption:"FOREIGNERS DURING THE POWER BALLAD ERA"},
+            {src:"punk.jpg", caption:"PEOPLE DURING THE PUNK ERA"},
+            {src:"soapopera.jpg", caption:"SOAP OPERA MAGAZINE"},
+        ]
     },
 ];
 
@@ -94,8 +114,8 @@ window.onload = function () {
     const images = document.querySelectorAll("img");
 
     images.forEach((img) => {
-        img.style.width = "400px";  // or whatever size you want
-        img.style.height = "auto";  // keeps the aspect ratio
+        img.style.width = "400px";
+        img.style.height = "auto";
     });
 };
 
