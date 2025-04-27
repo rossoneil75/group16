@@ -195,16 +195,14 @@ h4 {
 }
 
 .sections-container {
-    border: 5px solid #ccc; /* Keep the thick border */
-    padding: 20px; /* Add spacing inside the border */
-    margin: 20px auto; /* Center the container and add spacing around it */
-    max-width: 900px; /* Limit the width of the container */
-    background-color: #fff; /* Optional: Add a background color */
-    border-radius: 0; /* Remove rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    border: 5px solid #ccc; 
+    padding: 20px; 
+    margin: 20px auto; 
+    max-width: 900px; 
+    background-color: #fff; 
+    border-radius: 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
-
-/* ............................................................................................................................................................ */
 
 .newspaper-layout {
     display: grid;
