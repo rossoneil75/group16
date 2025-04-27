@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🎉 90s Pop Quiz</title>
+  <link rel="stylesheet" href="1990.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="home-button">
+      <a href="1990sBlog.html">🏠 Back to Blog</a>
+    </div>
+
+    <h1>🎉 90s Pop Quiz</h1>
+    <p><strong>By Rebeka Johnston - 40537933</strong></p>
+
+    <div class="container">
+      <div class="quiz-section" id="quiz">
+
+        <div class="question active">
+          <div class="question-box pink">
+            <p>1. Who was the US President during the 1990s?</p>
+            <button data-answer="true" onclick="checkAnswer(this)">A. Bill Clinton</button>
+            <button onclick="checkAnswer(this)">B. George Bush</button>
+            <button onclick="checkAnswer(this)">C. Barack Obama</button>
+            <p class="feedback"></p>
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="question-box teal">
+            <p>2. Which band defined the grunge movement?</p>
+            <button data-answer="true" onclick="checkAnswer(this)">A. Nirvana</button>
+            <button onclick="checkAnswer(this)">B. NSYNC</button>
+            <button onclick="checkAnswer(this)">C. Spice Girls</button>
+            <p class="feedback"></p>
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="question-box purple">
+            <p>3. What was a go-to 90s snack?</p>
+            <button data-answer="true" onclick="checkAnswer(this)">A. Lunchables</button>
+            <button onclick="checkAnswer(this)">B. Smoothie Bowls</button>
+            <button onclick="checkAnswer(this)">C. Kale Chips</button>
+            <p class="feedback"></p>
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="question-box yellow">
+            <p>4. What trend was part of 90s fashion?</p>
+            <button data-answer="true" onclick="checkAnswer(this)">A. Chokers</button>
+            <button onclick="checkAnswer(this)">B. Skinny Jeans</button>
+            <button onclick="checkAnswer(this)">C. Ugg Boots</button>
+            <p class="feedback"></p>
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="question-box blue">
+            <p>You finished the quiz! Well done!</p>
+            <p id="final-score"></p>
+            <button onclick="restartQuiz()">🎉 Try Again</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="1990sQuiz.js" defer></script>
+</body>
+</html>
