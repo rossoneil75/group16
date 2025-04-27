@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const topicsContent = {
     history: [
       {
-        media: "<img src='../img_2010s/brexit_flag.jpg' style='width:100%; border-radius:4px;'>",
+        media: "<img src='brexit_flag.jpg' style='width:100%; border-radius:4px;'>",
         text: `
       <ul>
        <li><strong>Arab Spring & Occupy Wall Street:</strong> The early 2010s were marked by massive protests. The Arab Spring swept across the Middle East and North Africa, toppling regimes and demanding democratic reforms. Meanwhile, Occupy Wall Street in the U.S. called attention to economic inequality and corporate power with the slogan “We are the 99%.”</li>
@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     music: [
       {
-        media: "<img src='../img_2010s/album.jpg' style='width:75%; border-radius:4px;'>",
+        media: "<img src='album.jpg' style='width:75%; border-radius:4px;'>",
         text: `
       <ul>
        <li><strong>Streaming Dominates:</strong> Services like Spotify, Apple Music, and YouTube reshaped how people discovered and consumed music. Playlists replaced albums, and users could access millions of songs on demand. This disrupted the traditional music industry and empowered independent artists.</li>
@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     politics: [
       {
-        media: "<img src='../img_2010s/Trump_rally.jpg' style='width:90%; border-radius:8px;'>",
+        media: "<img src='Trump_rally.jpg' style='width:90%; border-radius:8px;'>",
         text: `
       <ul>
        <li><strong>Trump and Populism:</strong> Donald Trump's 2016 election symbolized a global shift toward populist, outsider politics. His campaign focused on nationalism, media distrust, and shaking up the political system. Similar leaders rose in Brazil, Hungary, and the Philippines.</li>
@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ],
     fashion: [
       {
-        media: "<img src='../img_2010s/Fashion.jpg' style='width:90%; border-radius:8px;'>",
+        media: "<img src='2010_Fashion.jpg' style='width:90%; border-radius:8px;'>",
         text: `
       <ul>
        <li><strong>Streetwear Boom:</strong> Once underground, streetwear became luxury thanks to brands like Supreme and Off-White. Collaborations with Nike, Louis Vuitton, and artists made it high fashion. Drop culture and resale markets exploded online.</li>
@@ -213,7 +213,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ],
     food: [
       {
-        media: "<img src='../img_2010s/Avocado_toast.jpg' style='width:90%; border-radius:8px;'>",
+        media: "<img src='Avocado_toast.jpg' style='width:90%; border-radius:8px;'>",
         text: `
       <ul>
        <li><strong>Health Trends Take Over:</strong> Diets like veganism, keto, paleo, and gluten-free became mainstream. Wellness culture fueled grocery and restaurant innovation. People wanted food that felt good for their bodies — and their Instagram feeds.</li>
@@ -231,7 +231,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ],
     technology: [
       {
-        media: "<img src='../img_2010s/early-iphone-android.jpg' style='width:100%; border-radius:8px;'>",
+        media: "<img src='early-iphone-android.jpg' style='width:100%; border-radius:8px;'>",
         text: `
       <ul>
        <li><strong>Smartphone Life:</strong> By the mid-2010s, smartphones were no longer just phones — they were calendars, cameras, games, and social hubs. Screen time skyrocketed as mobile apps handled nearly everything. The iPhone and Android wars shaped tech culture.</li>
@@ -249,7 +249,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ],
     sports: [
       {
-        media: "<img src='../img_2010s/athletes.jpg' style='width:100%; border-radius:8px;'>",
+        media: "<img src='athletes.jpg' style='width:100%; border-radius:8px;'>",
         text: `
       <ul>
        <li><strong>GOAT Debates:</strong> LeBron James, Serena Williams, Lionel Messi, and Cristiano Ronaldo dominated their sports. Fans debated stats, titles, and influence endlessly. These athletes weren’t just successful — they shaped the culture.</li>
