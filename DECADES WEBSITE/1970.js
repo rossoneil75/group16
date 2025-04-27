@@ -14,6 +14,8 @@ function highlightSection(sectionId) {
     }
 }
 
+//..........................................................................................................................
+
 function openQuiz() {
     document.getElementById('quizModal').style.display = 'block';
 }
@@ -21,6 +23,8 @@ function openQuiz() {
 function closeQuiz() {
     document.getElementById('quizModal').style.display = 'none';
 }
+
+//..........................................................................................................................
 
 function submitQuiz() {
     const answers = {
