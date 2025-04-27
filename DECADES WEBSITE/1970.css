@@ -4,7 +4,7 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: rgb(255, 248, 239);
+    background-color: #fff8ef;
 }
 
 /* ............................................................................................................................................................ */
@@ -162,15 +162,13 @@ h4 {
 
 .flair {
     position: fixed;
-    z-index: 1000; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index: 10;
 }
 
 .flair img {
-    width: 150px; 
+    width: clamp(80px, 8vw, 150px);
     height: auto;
+    opacity: 0.8;
 }
 
 .flair-top-left {
@@ -182,10 +180,8 @@ h4 {
     bottom: 0;
     right: 0;
 }
-
 /* ............................................................................................................................................................ */
 
-/* Style for section images */
 .section-image {
     display: block; 
     margin: 20px auto; 
