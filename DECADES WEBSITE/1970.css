@@ -7,14 +7,15 @@ body {
     background-color: rgb(255, 248, 239);
 }
 
-/* Navbar Styles */
+/* ............................................................................................................................................................ */
+
 .navbar {
     margin: 20px 0;
     position: relative;
 }
 
 .navbar button {
-    position: relative; /* Ensure the dropdown is positioned relative to the button */
+    position: relative;
     margin: 10px;
     padding: 10px 15px;
     font-size: 16px;
@@ -23,12 +24,12 @@ body {
     border-radius: 10px;
     background-color: #c75723;
     color: white;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for smooth scaling */
+    transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
 .navbar button:hover {
     background-color: #edba71;
-    transform: scale(1.1); /* Slightly enlarge the button on hover */
+    transform: scale(1.1); 
 }
 
 .navbar button:active {
@@ -37,11 +38,11 @@ body {
 
 /* Dropdown Styles */
 .navbar button .dropdown {
-    display: none; /* Initially hide the dropdown */
+    display: none; 
     position: absolute;
-    top: 100%; /* Position the dropdown below the button */
-    left: 50%; /* Center the dropdown text relative to the button */
-    transform: translateX(-50%); /* Adjust for centering */
+    top: 100%; 
+    left: 50%; 
+    transform: translateX(-50%); 
     background-color: #f9f9f9;
     color: black;
     padding: 10px;
@@ -52,17 +53,17 @@ body {
     font-size: 14px;
 }
 
-/* Show the dropdown on hover */
 .navbar button:hover .dropdown {
     display: block;
 }
 
-/* Header Styles */
+/* ............................................................................................................................................................ */
+
 h1 {
     margin-bottom: 10px;
-    font-family: 'Comic Sans'; /* Apply Blippo, fantasy font */
-    font-size: 42px; /* Set font size */
-    color: #e18256; /* Set font color */
+    font-family: 'Comic Sans'; 
+    font-size: 42px; 
+    color: #e18256; 
 }
 
 h2 {
@@ -80,9 +81,10 @@ h3 {
 h4 {
     margin-bottom: 20px;
     font-size: 36px;
-    font-family: '', fantasy;
     color: #4f4e4e;  
 }
+
+/* ............................................................................................................................................................ */
 
 .image-container {
     display: flex;
@@ -107,6 +109,8 @@ h4 {
     gap: 10px;
 }
 
+/* ............................................................................................................................................................ */
+
 .page-button {
     padding: 15px 25px;
     font-size: 18px;
@@ -126,7 +130,6 @@ h4 {
     background-color: #997748;
 }
 
-/* Page Section Styles */
 .page-section {
     margin: 50px auto;
     max-width: 800px;
@@ -147,7 +150,6 @@ h4 {
     margin: 0 20px;
 }
 
-/* Alternate alignment for sections */
 .page-section.left-align {
     text-align: left;
 }
@@ -156,39 +158,40 @@ h4 {
     text-align: right;
 }
 
-/* Flair Styles */
+/* ............................................................................................................................................................ */
+
 .flair {
     position: fixed;
-    z-index: 1000; /* Ensure flairs are above all other content */
+    z-index: 1000; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .flair img {
-    width: 150px; /* Adjust size as needed */
+    width: 150px; 
     height: auto;
 }
 
-/* Top-left flair */
 .flair-top-left {
     top: 0;
     left: 0;
 }
 
-/* Bottom-right flair */
 .flair-bottom-right {
     bottom: 0;
     right: 0;
 }
 
+/* ............................................................................................................................................................ */
+
 /* Style for section images */
 .section-image {
-    float: left; /* Push the image to the left */
-    margin-right: 20px; /* Add spacing between the image and text */
-    margin-top: 30px; /* Move the image down by a few pixels */
-    width: 250px !important; /* Force the width to 50px */
-    height: auto !important; /* Maintain aspect ratio */
+    display: block; 
+    margin: 20px auto; 
+    width: auto;
+    max-width: 100%; 
+    height: auto; 
 }
 
 .sections-container {
@@ -201,34 +204,71 @@ h4 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
 
+/* ............................................................................................................................................................ */
+
 .newspaper-layout {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
-    gap: 20px; /* Space between columns */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     padding: 20px;
     max-width: 1200px;
-    margin: 0 auto; /* Center the layout */
+    margin: 0 auto;
     background-color: #fff;
     border: 5px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    grid-auto-rows: auto;
 }
 
-/* Newspaper Title Styles */
 .newspaper-title {
-    grid-column: span 3; /* Make the title span across all columns */
+    grid-column: span 3;
     text-align: left;
-    margin-bottom: 5px; /* Reduce the bottom margin */
+    margin-bottom: 5px;
     padding: 1px;
-    border-bottom: 3px solid #000000; /* Add a bold underline */
+    border-bottom: 3px solid #000000;
 }
 
 .newspaper-title h1 {
-    font-family: 'Times New Roman', serif; /* Classic newspaper font */
-    font-size: 80px; /* Large font size */
+    font-family: 'Times New Roman', serif;
+    font-size: 80px;
     font-weight: bold;
-    color: #000; /* Black text */
-    text-transform: uppercase; /* Make the text uppercase */
-    letter-spacing: 2px; /* Add spacing between letters */
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.newspaper-title {
+    grid-column: span 3;
+    text-align: left;
+    margin-bottom: 5px;
+    padding: 1px;
+    border-bottom: 3px solid #000000;
+}
+
+.newspaper-title h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 80px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ............................................................................................................................................................ */
+
+.article {
+    grid-column: span 1;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
 }
 
 .article h2 {
@@ -241,12 +281,7 @@ h4 {
     font-size: 16px;
     line-height: 1.6;
     color: #555;
-}
-
-.article img {
-    width: 100%;
-    height: auto;
-    margin: 10px 0;
+    text-align: justify;
 }
 
 .article footer {
@@ -254,48 +289,51 @@ h4 {
     color: #888;
     margin-top: 10px;
     text-align: right;
+    text-align: justify;
 }
-
 
 .article.highlight {
     background-color: #ffe88b;
-    border-radius: 15px; /* Rounded corners */
-    animation: pop-out 0.5s ease, fade-out-bg 1s ease 0.5s forwards; /* Pop-out and fade-out animations */
+    border-radius: 15px;
+    animation: pop-out 0.5s ease, fade-out-bg 1s ease 0.5s forwards;
 }
 
-/* Pop-out animation */
+/* ............................................................................................................................................................ */
+
 @keyframes pop-out {
     0% {
-        transform: scale(1); /* Start at normal size */
+        transform: scale(1);
     }
     50% {
-        transform: scale(1.05); /* Enlarge slightly */
+        transform: scale(1.05);
     }
     100% {
-        transform: scale(1); /* Return to normal size */
+        transform: scale(1);
     }
 }
 
-/* Fade-out animation for background color */
 @keyframes fade-out-bg {
     0% {
-        background-color: #ffe88b; /* Start with the highlight color */
+        background-color: #ffe88b;
     }
     100% {
-        background-color: transparent; /* Fade to transparent */
+        background-color: transparent;
     }
 }
 
-/* Footer Section Styles */
+/* ............................................................................................................................................................ */
+
 .newspaper-footer {
-    grid-column: span 3; /* Span across all columns */
-    margin: 5px 0; /* Reduce the top and bottom margin */
-    padding: 2px 0; /* Minimal padding */
-    border-bottom: 2px solid #ccc; /* Line separating the footer */
+    grid-column: span 3;
+    margin-top: 20px;
+    padding: 10px 0;
+    border-top: 2px solid #ccc;
     text-align: center;
     font-size: 14px;
-    color: #000000;
+    color: #000;
 }
+
+/* ............................................................................................................................................................ */
 
 .footer-content {
     display: flex;
@@ -304,7 +342,7 @@ h4 {
 }
 
 .footer-section {
-    flex: 1; /* Equal width for all sections */
+    flex: 1;
     text-align: center;
 }
 
@@ -318,5 +356,73 @@ h4 {
 
 .footer-right {
     text-align: right;
+}
+
+/* ............................................................................................................................................................ */
+
+.quiz-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.quiz-modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.quiz-content {
+    background-color: #fff;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.quiz-content form {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.quiz-content h2 {
+    margin-bottom: 20px;
+}
+
+.quiz-content button {
+    margin-top: 20px;
+}
+
+/* ............................................................................................................................................................ */
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
 }
 
