@@ -1,4 +1,5 @@
-const buttons = document.querySelectorAll('.button');
+const buttons = document.querySelectorAll('.button1, .button2, .button3, .button4, .button5');
+
 
 const files = [
     "1970_MichealGibson.html",

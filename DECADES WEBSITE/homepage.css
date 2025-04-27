@@ -6,6 +6,99 @@ body {
     display: flex;
     justify-content: center;
 }
+@media (max-width: 600px) {
+    .button-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .button-row > div {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.2em;
+    }
+}
+
+
+.rectangle2, .rectangle1{
+    width: 900px;
+    height: 420px;
+    padding: 20px;
+    background-color: yellow;
+    color: #FF007F;
+    font-size: 18px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    font-family: "sans-serif;", serif;
+    animation: neonBorder 1.5s infinite alternate;
+    transition: transform 0.3s;
+}
+
+.rectangle2, .rectangle1 h1{
+    text-transform: uppercase;
+}
+
+.rectangle2, .rectangle1 p{
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.rectangle3{
+    width: 900px;
+    height: 270px;
+    padding: 20px;
+    background-color: yellow;
+    color: #FF007F;
+    font-size: 18px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    font-family: "sans-serif;", serif;
+    animation: neonBorder 1.5s infinite alternate;
+    transition: transform 0.3s;
+}
+
+.rectangle3 h1{
+    text-transform: uppercase;
+}
+
+.rectangle3 p{
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.rectangle{
+    width: 900px;
+    height: 290px;
+    padding: 20px;
+    background-color: white;
+    color: #FF007F;
+    font-size: 18px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    font-family: "sans-serif;", serif;
+    animation: neonBorder 1.5s infinite alternate;
+    transition: transform 0.3s;
+}
+
+.rectangle h1{
+    text-transform: uppercase;
+}
+
+.rectangle p{
+    font-weight: bold;
+    font-size: 19px;
+}
 
 #video-section{
     position: fixed;
@@ -56,13 +149,65 @@ video{
     align-items: center;
 }
 
-.button {
+.button1 {
     padding: 50px 50px;
-    background-color: yellow;
+    background-color: #997748;
+    border: 2px solid #fff8ef;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 0 10px #fff8ef;
+    animation: neonBorder 1.5s infinite alternate;
+    transition: transform 0.3s;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.button3 {
+    padding: 50px 50px;
+    background-color: #ffccff;
+    border: 2px solid lightskyblue;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 0 10px lightskyblue;
+    animation: neonBorder 1.5s infinite alternate;
+    transition: transform 0.3s;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.button2 {
+    padding: 50px 50px;
+    background-color: #FF007F;
     border: 2px solid #0000FF;
     cursor: pointer;
     text-align: center;
     box-shadow: 0 0 10px #0000FF;
+    animation: neonBorder 1.5s infinite alternate;
+    transition: transform 0.3s;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.button4 {
+    padding: 50px 50px;
+    background-color: #2a8180;
+    border: 2px solid #fffb50;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 0 10px #fffb50;
+    animation: neonBorder 1.5s infinite alternate;
+    transition: transform 0.3s;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.button5 {
+    padding: 50px 50px;
+    background-color: limegreen;
+    border: 2px solid black;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 0 10px black;
     animation: neonBorder 1.5s infinite alternate;
     transition: transform 0.3s;
     margin-top: 60px;
@@ -90,7 +235,7 @@ video{
     padding: 15px;
     text-align: center;
     min-height: 100px;
-    font-size: 40px;
+    font-size: 20px;
 }
 
 .text {
@@ -116,4 +261,17 @@ video{
     .button-row > div {
         width: 80%;
     }
+}
+
+.social-media {
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+    padding: 20px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 }

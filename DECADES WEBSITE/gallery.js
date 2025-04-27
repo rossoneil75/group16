@@ -66,7 +66,12 @@ const galleries = [
     },
     {
         title: "POP CULTURE",
-        images: ["car1.jpg", "car2.jpg", "car3.jpg"]
+        images: [
+            {src:"80tvshows.avif", caption:"POPULAR TV SHOWS IN THE 80s"},
+            {src:"foreigners.jpg", caption:"FOREIGNERS DURING THE POWER BALLAD ERA"},
+            {src:"punk.jpg", caption:"PEOPLE DURING THE PUNK ERA"},
+            {src:"soapopera.jpg", caption:"SOAP OPERA MAGAZINE"},
+        ]
     },
 ];
 

@@ -20,6 +20,13 @@ body {
     padding: 0;
 }
 
+@media (max-width: 768px) {
+    .titlebar {
+        font-size: 16px; /* Reduced font size for smaller screens */
+        padding: 0.5em;
+    }
+}
+
 
 .titlebar{
     text-align: center;
@@ -83,6 +90,9 @@ body {
 
 .navbar{
     padding-top: 30px;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+    display: flex;
 }
 
 .navbar a{
@@ -95,6 +105,9 @@ body {
 
 .navbar a{
     padding-left: 40px;
+    flex: 1 1 auto; /* Distribute space evenly */
+    text-align: center; /* Center text within each link */
+    min-width: 100px; /* Minimum width for each link */
 }
 
 .navbar a:hover{
@@ -126,6 +139,8 @@ video{
     max-width: 1300px;
     margin: 0 auto;
 }
+
+
 
 .rectangle{
     width: 900px;
@@ -159,7 +174,7 @@ video{
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
     justify-items: center;
@@ -512,6 +527,17 @@ button {
             to right,#FF007F, #8f68ff, #487bff,#0000FF,#fc72ff);
     color: white;
     cursor: pointer;
+}
+
+.spotify-embed {
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.spotify-embed iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
