@@ -1,0 +1,365 @@
+/* overall page look - windows xp inspired colours and fonts */
+body {
+    font-family: 'Tahoma', Arial, sans-serif;
+    background-color: #018281;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* main content wrapper */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 4px solid #000000;
+    box-shadow: 8px 8px 0px #000000;
+}
+
+/* header section at the top */
+header {
+    background-color: #000080;
+    padding: 10px 20px;
+}
+
+/* aligns text to the right */
+.right-align {
+    text-align: right;
+    padding-right: 20px;
+}
+
+/* home button style - blue with layered shadow */
+.home-btn {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #000080;
+    border: none;
+    box-shadow:
+        2px 2px 0px #000060,
+        4px 4px 0px #000040,
+        inset 1px 1px 0px #4040ff;
+    transition: all 0.1s ease;
+}
+
+/* home button hover effect - yellow text and softer shadow */
+.home-btn:hover {
+    color: #ffff00;
+    box-shadow:
+        1px 1px 0px #000060,
+        3px 3px 0px #000040,
+        inset 1px 1px 0px #6060ff;
+    transform: translate(1px, 1px);
+}
+
+/* page title section with comic sans and yellow text */
+.title-section {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #018281;
+    color: white;
+    margin-bottom: 20px;
+    border: 3px solid #000000;
+}
+
+.title-section h1 {
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 2.5em;
+    margin: 0;
+    color: #ffff00;
+    text-shadow: 2px 2px 0px #000000;
+}
+
+/* small credit text below the title */
+.designer-credit {
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* quick navigation buttons - styled like 3d blocks */
+.quick-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.quick-nav button {
+    background-color: #c0c0c0;
+    border: none;
+    padding: 8px 15px;
+    font-family: 'Tahoma', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    color: #000;
+    text-shadow: 1px 1px 0px rgba(255,255,255,0.5);
+    box-shadow:
+        2px 2px 0px #808080,
+        4px 4px 0px #a0a0a0,
+        inset 1px 1px 0px #e0e0e0;
+    transition: all 0.1s ease;
+    transform: translate(0, 0);
+}
+
+/* button hover effect - teal background and soft shadows */
+.quick-nav button:hover {
+    background-color: #018281;
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.3);
+    box-shadow:
+        1px 1px 0px #606060,
+        3px 3px 0px #808080,
+        inset 1px 1px 0px #40a0a0;
+    transform: translate(1px, 1px);
+}
+
+/* button click effect - pressed in */
+.quick-nav button:active {
+    box-shadow:
+        0px 0px 0px #606060,
+        2px 2px 0px #808080,
+        inset 1px 1px 0px #006060;
+    transform: translate(2px, 2px);
+}
+
+/* individual content blocks */
+.content-section {
+    margin-bottom: 40px;
+    padding: 15px;
+    border: 2px solid #c0c0c0;
+    background-color: #f0f0f0;
+}
+
+/* section titles with comic sans and underline */
+.content-section h2 {
+    color: #000080;
+    border-bottom: 2px solid #000080;
+    padding-bottom: 5px;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+/* layout for text and images side by side */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    grid-template-areas: "text media";
+}
+
+/* reverse layout - media on left */
+.content-grid.reverse {
+    grid-template-areas: "media text";
+}
+
+/* grid area for text */
+.text-content {
+    grid-area: text;
+    text-align: justify;
+}
+
+/* grid area for image or media */
+.media-content {
+    grid-area: media;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styles for images inside sections */
+.section-image {
+    max-width: 100%;
+    border: 3px solid #000000;
+    box-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+}
+
+/* spacing for bullet lists */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* spotify player styling */
+.spotify-embed {
+    margin-top: 20px;
+    border: 2px solid #000000;
+    padding: 5px;
+    background-color: white;
+}
+
+/* floating quiz button at bottom right */
+.sticky-quiz-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 128, 128, 0.7);
+    color: white;
+    padding: 12px 20px;
+    border: 2px solid #000;
+    cursor: pointer;
+    font-family: 'Tahoma', sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px #000;
+    box-shadow:
+        3px 3px 0px rgba(0, 0, 0, 0.3),
+        inset 1px 1px 0px rgba(255, 255, 255, 0.2);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+/* quiz button hover animation */
+.sticky-quiz-btn:hover {
+    background-color: rgba(1, 130, 129, 0.9);
+    transform: translateY(-2px);
+}
+
+/* background layer for quiz popup */
+.quiz-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1001;
+}
+
+/* quiz box in the center */
+.quiz-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 3px solid #000080;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* x button to close the quiz */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000080;
+    font-weight: bold;
+}
+
+/* quiz question heading */
+#quiz h3 {
+    color: #000080;
+    margin-bottom: 15px;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+/* quiz option buttons */
+#quiz button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #c0c0c0;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    color: #000;
+    text-shadow: 1px 1px 0px rgba(255,255,255,0.5);
+    box-shadow:
+        2px 2px 0px #808080,
+        4px 4px 0px #a0a0a0,
+        inset 1px 1px 0px #e0e0e0;
+    transition: all 0.1s ease;
+}
+
+/* button hover effect during quiz */
+#quiz button:hover {
+    background-color: #018281;
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.3);
+    box-shadow:
+        1px 1px 0px #606060,
+        3px 3px 0px #808080,
+        inset 1px 1px 0px #40a0a0;
+    transform: translate(1px, 1px);
+}
+
+/* correct and incorrect answer styles */
+.correct {
+    background-color: #4CAF50 !important;
+    color: white !important;
+    box-shadow: none !important;
+    transform: translate(2px, 2px) !important;
+}
+
+.incorrect {
+    background-color: #F44336 !important;
+    color: white !important;
+    box-shadow: none !important;
+    transform: translate(2px, 2px) !important;
+}
+
+/* final quiz result box */
+.quiz-result {
+    text-align: center;
+}
+
+/* restart and close quiz buttons */
+.quiz-restart-btn, .quiz-close-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 15px;
+}
+
+/* simple pulse animation for quiz button */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* mobile-friendly layout changes */
+@media (max-width: 768px) {
+    .content-grid,
+    .content-grid.reverse {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "media"
+            "text";
+    }
+
+    .quick-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quick-nav button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .quiz-content {
+        width: 90%;
+    }
+
+    .sticky-quiz-btn {
+        padding: 10px 15px;
+        font-size: 0.9em;
+        right: 10px;
+        bottom: 10px;
+    }
+}
