@@ -2,7 +2,7 @@ const buttons = document.querySelectorAll('.button1, .button2, .button3, .button
 
 
 const files = [
-    "1970_MichealGibson.html",
+    "1970.html",
     "1980's Decade.html",
     "1990s Decade.html",
     "2000.html",
